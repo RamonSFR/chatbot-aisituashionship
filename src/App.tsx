@@ -1,4 +1,5 @@
 import Background from './components/Background'
+import Chat from './components/Chat'
 import GlobalStyles from './styles/GlobalStyles'
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <>
       <GlobalStyles />
       <Background />
-      <h1>Hello World</h1>
+      <Chat />
     </>
   )
 }

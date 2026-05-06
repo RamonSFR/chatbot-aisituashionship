@@ -5,7 +5,8 @@ export const colors = {
   color2: '#62b6cb',
   color3: '#1b4965',
   color4: '#cae9ff',
-  color5: '#5fa8d3'
+  color5: '#5fa8d3',
+  color6: '#04041d'
 }
 
 const GlobalStyles = createGlobalStyle`
@@ -19,6 +20,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
     background: linear-gradient(to bottom, #0b0b2b, #1b2735 70%, #090a0f);
+    color: #ffffff;
     overflow: hidden;
   }
 `
