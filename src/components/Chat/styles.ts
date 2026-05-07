@@ -24,6 +24,12 @@ export const Container = styled.div`
   }
 `
 
+export const Title = styled.h1`
+  margin-bottom: 16px;
+  color: #fff;
+  letter-spacing: 0.04em;
+`
+
 export const MessageContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -44,14 +50,23 @@ export const Message = styled.div`
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
+
+  p {
+    white-space: pre-wrap;
+    line-height: 1.5;
+  }
 `
 
 export const UserMessage = styled(Message)`
   background-color: ${c.color2};
+  align-self: flex-end;
+  color: #03111a;
 `
 
 export const BotMessage = styled(Message)`
   background-color: ${c.color3};
+  align-self: flex-start;
+  color: #fff;
 `
 
 export const InputContainer = styled.div`
@@ -88,4 +103,17 @@ export const SendButton = styled.button`
   &:hover {
     background-color: ${c.color4};
   }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+`
+
+export const ErrorMessage = styled.p`
+  width: 100%;
+  margin: 0 0 8px;
+  padding: 0 20px;
+  color: #ffb4b4;
+  font-size: 0.95rem;
 `
